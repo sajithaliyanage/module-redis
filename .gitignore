@@ -25,3 +25,16 @@ hs_err_pid*
 *.iml
 *.ipr
 *.iws
+
+# ignore Intellij-IDEA files
+*.iml
+.idea/
+.DS_Store
+
+# Eclipse files
+.project
+
+#VSCode
+.vscode/
+# Temporary directories
+target/

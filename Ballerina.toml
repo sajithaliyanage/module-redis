@@ -1,0 +1,43 @@
+[project]
+org-name= "wso2"
+version= "0.1.0"
+
+[dependencies]
+
+[platform]
+target = "java8"
+
+  [[platform.libraries]]
+  module = "redis"
+  path = "./utils/target/redis-utils-0.6.0.jar"
+  artafactId = "redis-utils"
+  version = "0.6.0"
+  groupId = "org.wso2.ei"
+
+  [[platform.libraries]]
+    module = "redis"
+    path = "./utils/target/classes/lib/lettuce-core-5.1.8.RELEASE.jar"
+    artafactId = "lettuce-core"
+    version = "5.1.8.RELEASE"
+    groupId = "io.lettuce"
+
+    [[platform.libraries]]
+        module = "redis"
+        path = "./utils/target/classes/lib/reactor-core-3.2.11.RELEASE.jar"
+        artafactId = "reactor-core"
+        version = "3.1.4.RELEASE"
+        groupId = "io.projectreactor"
+
+        [[platform.libraries]]
+                module = "redis"
+                path = "./utils/target/classes/lib/reactive-streams-1.0.2.jar"
+                artafactId = "reactive-streams"
+                version = "1.0.0"
+                groupId = "org.reactivestreams"
+
+                [[platform.libraries]]
+                                module = "redis"
+                                path = "./utils/target/classes/lib/commons-pool2-2.4.3.jar"
+                                artafactId = "commons-pool2"
+                                version = "2.4.3"
+                                groupId = "org.apache.commons"
